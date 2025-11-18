@@ -3,13 +3,13 @@ from fastapi.responses import JSONResponse, Response, HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 import os, json, logging, traceback
 
-from .extractor import extract_text_from_bytes
-from .clause_engine import analyze_clauses, generate_clause_openai
-from .modifier import build_modified_docx_bytes
-from .integrations import send_notifications, read_missing_clauses_from_sheet
-from .reports import build_pdf_report_bytes
-from .history import add_record, load_history  
-from .google_sheet import write_history, read_history_rows, write_email_log
+from extractor import extract_text_from_bytes
+from clause_engine import analyze_clauses, generate_clause_openai
+from modifier import build_modified_docx_bytes
+from integrations import send_notifications, read_missing_clauses_from_sheet
+from reports import build_pdf_report_bytes
+from history import add_record, load_history  
+from google_sheet import write_history, read_history_rows, write_email_log
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("compliance_backend")
