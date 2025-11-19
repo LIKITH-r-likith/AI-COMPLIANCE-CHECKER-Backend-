@@ -9,6 +9,8 @@ python-dotenv
 slack-sdk
 sendgrid
 google-api-python-client
+gspread
+
 google-auth
 google-auth-oauthlib
 openai
